@@ -7,11 +7,16 @@ eventManager.once("ioInitialize", (io) => {
     // Thiết lập trình xử lý sự kiện 'connection' và 'disconnect' trong io
     io.on("connection", (socket) => {
         console.log("Socket connected with ID: ", socket.id);
+        socket.on("getDistance", (distance) => {
+            console.log("Received distance from socket with ID ", socket.id, ": ", distance);
+        });
         socket.on("disconnect", () => {
             console.log("Socket disconnected with ID: ", socket.id);
         });
     });
 });
+
+
 
 const getOrders = async (req, res) => {
     res.render("order");

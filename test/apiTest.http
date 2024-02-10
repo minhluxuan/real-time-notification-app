@@ -4,5 +4,7 @@ Content-Type: application/json
 {
     "order_date": "6:42 6/2/2024",
     "source": "326, Đất Đỏ",
-    "destination": "KTX khu A"
+    "destination": "KTX khu A",
+    "latitude": 10.40002,
+    "longitude": 10.3001
 }
