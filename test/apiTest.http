@@ -8,3 +8,7 @@ Content-Type: application/json
     "latitude": 10.40002,
     "longitude": 10.3001
 }
+
+###
+
+GET http://localhost:3000/orders
